@@ -1,0 +1,8 @@
+@host=https://viacep.com.br
+@cep=58031060
+
+###
+GET {{host}}/ws/{{cep}}/json/
+
+###
+GET https://viacep.com.br/ws/58031062/json/

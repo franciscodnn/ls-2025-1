@@ -1,0 +1,37 @@
+@URL=https://trpriohefxcplyfyywxx.supabase.co
+@API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRycHJpb2hlZnhjcGx5Znl5d3h4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5MDYyNTksImV4cCI6MjA2OTQ4MjI1OX0.JgVbsdjJgHTUMkqjhWAaeiUcaz4F9E99E65sKUVwDlk
+
+###
+GET {{URL}}/rest/v1/investments?select=*
+apikey: {{API_KEY}}
+Authorization: Bearer {{API_KEY}}
+
+###
+DELETE {{URL}}/rest/v1/investments?id=eq.f2196407-18a7-4ac7-b98b-cf4a374b2810
+apikey: {{API_KEY}}
+Authorization: Bearer {{API_KEY}}
+
+###
+POST {{URL}}/rest/v1/investments
+apikey: {{API_KEY}}
+Authorization: Bearer {{API_KEY}}
+Content-Type: application/json
+Prefer: return=representation
+
+{
+    "name": "Tesouro IPCA 2035",
+    "value": 10000,
+    "origin": "Tesouro Nacional",
+    "category": "Pós",
+    "interest": "IPCA + 6,80%"
+}
+
+###
+PATCH {{URL}}/rest/v1/investments?id=eq.bbb1bafa-bfdd-448d-9cb8-a9bec3351835
+apikey: {{API_KEY}}
+Authorization: Bearer {{API_KEY}}
+Content-Type: application/json
+
+{
+    "name": "Tesouro IPCA 2029"
+}
